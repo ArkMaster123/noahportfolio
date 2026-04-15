@@ -8,6 +8,14 @@ import SignatureMarqueeSection from "./signature-marquee-section"
 export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [isReady, setIsReady] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768)
+    check()
+    window.addEventListener("resize", check)
+    return () => window.removeEventListener("resize", check)
+  }, [])
 
   // Wait for preloader (2.5s + buffer)
   useEffect(() => {
@@ -26,18 +34,21 @@ export default function HeroSection() {
     restDelta: 0.001,
   })
 
-  // Phase 1: Shrink Portrait (0% -> 40%)
-  // Maps scroll 0-0.4 to scale 1-0.45
   const scale = useTransform(smoothProgress, [0, 0.4], [1, 0.45])
-
-  // Phase 2: Text Parallax (0% -> 80%)
-  // Text moves slightly to create depth
   const textOpacity = useTransform(smoothProgress, [0, 0.2], [0, 1])
-
-  // Phase 3: Exit (80% -> 100%)
-  // Everything slides up to reveal next section
   const exitY = useTransform(smoothProgress, [0.85, 1], ["0%", "-100%"])
   const exitOpacity = useTransform(smoothProgress, [0.9, 1], [1, 0])
+
+  // Mobile: static single-screen hero, no scroll animation
+  if (isMobile) {
+    return (
+      <section className="relative h-screen bg-[#1a1f1a] flex items-center justify-center overflow-hidden">
+        <div className="w-full h-full flex items-center justify-center">
+          {isReady && <InteractivePortrait />}
+        </div>
+      </section>
+    )
+  }
 
   return (
     <section ref={containerRef} className="relative h-[300vh] bg-[#1a1f1a]">
