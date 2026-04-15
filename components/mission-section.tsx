@@ -52,7 +52,7 @@ export default function MissionSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-10 sm:mb-12 md:mb-16"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-10 sm:mb-12 md:mb-16"
         >
           {stats.map((stat, index) => (
             <motion.div
@@ -65,7 +65,7 @@ export default function MissionSection() {
              >
               <stat.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-lorenzo-accent mx-auto mb-2 sm:mb-3" />
               <div className="text-2xl sm:text-3xl md:text-4xl font-black text-lorenzo-accent mb-1">{stat.value}</div>
-              <div className="text-[11px] sm:text-xs md:text-sm leading-tight text-white/60 uppercase tracking-wide break-words">
+              <div className="text-[11px] sm:text-xs md:text-sm leading-tight text-white/60 uppercase tracking-normal sm:tracking-wide break-words">
                 {stat.label}
               </div>
             </motion.div>
@@ -73,8 +73,21 @@ export default function MissionSection() {
         </motion.div>
 
         <div className="text-center">
-          <h2 className="text-[clamp(2.2rem,11vw,5rem)] md:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.05] md:leading-[1.1] text-balance">
-            <span className="text-lorenzo-accent font-brier leading-[1.05] text-[clamp(2.7rem,13vw,6rem)] md:text-8xl">
+          <h2 className="sm:hidden max-w-[20rem] mx-auto text-[2.5rem] font-black uppercase tracking-tight leading-[1.06]">
+            <span className="block text-lorenzo-accent font-brier text-[3rem] leading-[1.02]">Transforming</span>
+            <span className="block">Complex AI</span>
+            <span className="block">
+              Into <span className="text-lorenzo-accent font-brier">Real Business</span>
+            </span>
+            <span className="block">Value for Startups</span>
+            <span className="block">
+              to <span className="text-lorenzo-accent font-brier">FTSE 100</span>
+            </span>
+            <span className="block">Companies</span>
+          </h2>
+
+          <h2 className="hidden sm:block text-[clamp(2.2rem,8vw,5rem)] md:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.05] md:leading-[1.1] text-balance">
+            <span className="text-lorenzo-accent font-brier leading-[1.05] text-[clamp(2.7rem,10vw,6rem)] md:text-8xl">
               TRANSFORMING
             </span>{" "}
             COMPLEX AI
