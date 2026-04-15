@@ -31,8 +31,8 @@ const experiences: Experience[] = [
     period: "Sept 2024 – Jun 2025",
     location: "London, UK",
     description:
-      "Self-taught development using Claude Code and NextJS to build and ship AI products at pace, scaling to £100k+ revenue within 12 months with 3 contractors across 7+ concurrent projects. Built 'WebMD Clone' — distilling 4 years of clinical knowledge into a custom agentic AI — and flow.legal, a legaltech platform using multi-agent pipelines.",
-    highlights: ["£100k+ revenue", "WebMD Clone", "flow.legal"],
+      "Self-taught development using Claude Code and NextJS to build and ship AI products at pace, scaling to £100k+ revenue within 12 months with 3 contractors across 7+ concurrent projects. Built 'WebMD Clone' — distilling 4 years of clinical knowledge into a custom agentic AI — and flow.legal, a legaltech platform using multi-agent pipelines. Consulting clients included Eli Lilly.",
+    highlights: ["£100k+ revenue", "Eli Lilly", "WebMD Clone", "flow.legal"],
     link: "https://bornandbrand.com",
   },
   {
