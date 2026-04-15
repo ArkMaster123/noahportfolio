@@ -167,12 +167,12 @@
   }
   body {
     @apply bg-background text-foreground;
-    /* Removendo overflow-x: hidden para permitir scroll horizontal controlado na masonry */
+    overflow-x: hidden;
   }
 
   html {
     scroll-behavior: smooth;
-    /* Removendo overflow-x: hidden para permitir scroll horizontal controlado na masonry */
+    overflow-x: hidden;
   }
 
   h1,

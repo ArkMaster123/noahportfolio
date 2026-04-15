@@ -43,7 +43,7 @@ export default function MissionSection() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative min-h-screen bg-lorenzo-dark text-lorenzo-text-light py-24 flex items-center justify-center"
+      className="relative min-h-screen bg-lorenzo-dark text-lorenzo-text-light py-16 md:py-24 flex items-center justify-center overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Stats Grid */}
@@ -52,7 +52,7 @@ export default function MissionSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-16"
         >
           {stats.map((stat, index) => (
             <motion.div
@@ -61,24 +61,25 @@ export default function MissionSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="text-center p-6 rounded-2xl bg-white/5 border border-white/10"
-            >
+               className="text-center p-4 md:p-6 rounded-2xl bg-white/5 border border-white/10"
+             >
               <stat.icon className="w-8 h-8 text-lorenzo-accent mx-auto mb-3" />
-              <div className="text-3xl md:text-4xl font-black text-lorenzo-accent mb-1">{stat.value}</div>
-              <div className="text-sm text-white/60 uppercase tracking-wider">{stat.label}</div>
-            </motion.div>
-          ))}
-        </motion.div>
+               <div className="text-3xl md:text-4xl font-black text-lorenzo-accent mb-1">{stat.value}</div>
+               <div className="text-xs sm:text-sm text-white/60 uppercase tracking-wider">{stat.label}</div>
+             </motion.div>
+           ))}
+         </motion.div>
 
         <div className="text-center">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-balance leading-[1.1] xl:text-8xl">
-            <span className="text-lorenzo-accent font-brier leading-[1.1] text-8xl">TRANSFORMING</span> COMPLEX AI
+          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.05] md:leading-[1.1] text-balance">
+            <span className="text-lorenzo-accent font-brier leading-[1.05] text-5xl sm:text-6xl md:text-8xl">TRANSFORMING</span>{" "}
+            COMPLEX AI
             <br />
-            INTO <span className="text-lorenzo-accent font-brier leading-[1.1]">REAL BUSINESS</span>
+            INTO <span className="text-lorenzo-accent font-brier leading-[1.05]">REAL BUSINESS</span>
             <br />
             VALUE. FROM STARTUPS
             <br />
-            TO <span className="text-lorenzo-accent font-brier leading-[1.1]">FTSE 100</span>
+            TO <span className="text-lorenzo-accent font-brier leading-[1.05]">FTSE 100</span>
             <br />
             COMPANIES.
           </h2>

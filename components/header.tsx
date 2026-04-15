@@ -65,15 +65,15 @@ export default function Header() {
           scrolled ? "backdrop-blur-md" : "bg-transparent"
         }`}
       >
-        <div className="mx-auto px-6 md:px-12 flex items-center justify-between h-16">
+        <div className="mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between h-16">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="flex flex-col justify-center items-start mix-blend-difference"
+            className="flex flex-col justify-center items-start mix-blend-difference min-w-0"
           >
             <h1
-              className={`font-brier text-3xl leading-none mt-1 tracking-tight font-bold transition-colors duration-300 ${
+              className={`font-brier text-2xl sm:text-3xl leading-none mt-1 tracking-tight font-bold transition-colors duration-300 whitespace-nowrap ${
                 logoColor === "white" ? "text-white" : "text-lorenzo-dark"
               }`}
             >
