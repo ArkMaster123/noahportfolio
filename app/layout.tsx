@@ -60,7 +60,6 @@ export const metadata: Metadata = {
       "Head of Growth @ GroundCtrl | Founder @ Born & Brand | Transforming businesses with AI, MVPs, and strategic growth solutions.",
     images: ["/spacesuit/visor-off.png"],
   },
-  generator: "v0.app",
   icons: {
     icon: [
       {
