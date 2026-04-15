@@ -23,6 +23,7 @@ const experiences: Experience[] = [
     description:
       "Built a £1.5M qualified pipeline and closed £100k+ in revenue from a standing start. Conceptualised and negotiated 'Sentinel' — an AI avatar solution — and pioneered 'Vibe Coding as a Service', training the team to ship AI products through prompt-driven development. Client base spans Market Research firms, US Federal Grant Suppliers, and Defence Contractors (NDAs in place).",
     highlights: ["£1.5M pipeline", "£100k+ revenue", "Defence & Federal clients", "Vibe Coding as a Service"],
+    link: "https://groundctrl.space",
     current: true,
   },
   {
