@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import SpeakingPageClient from "./speaking-page-client"
 
 export const metadata: Metadata = {
-  title: "Speaking — Noah Santoni",
+  title: "Speaking | Noah Santoni",
   description:
     "Noah Santoni speaking at AI conferences, developer meetups, and sovereign wealth fund forums around the world.",
 }

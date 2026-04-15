@@ -93,7 +93,7 @@ export default function MissionSection() {
           className="mt-16 max-w-3xl mx-auto text-center"
         >
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-            From enterprise sales at Google and BAE Systems to founding AI companies and keynoting Vercel's NextJS Conference. Nine years of transforming businesses — now building AI products, automations, and growth strategies that turn complexity into commercial results.
+            From enterprise sales at Google and BAE Systems to founding AI companies and keynoting Vercel's NextJS Conference. Nine years of transforming businesses, now building AI products, automations, and growth strategies that turn complexity into commercial results.
           </p>
         </motion.div>
       </div>

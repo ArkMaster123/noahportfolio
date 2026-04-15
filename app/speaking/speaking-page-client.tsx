@@ -29,7 +29,7 @@ const events: Event[] = [
     location: "London, UK",
     audience: "Developer Community",
     description:
-      "Speaking at the Next.js London Watch Party as Head of Growth @ GroundCtrl — covering MVPs, AI-powered app migrations, and how we help businesses escape legacy tech debt. Presented to a live London audience alongside the global Next.js conference stream.",
+      "Speaking at the Next.js London Watch Party as Head of Growth at GroundCtrl, covering MVPs, AI-powered app migrations, and how we help businesses escape legacy tech debt. Presented to a live London audience alongside the global Next.js conference stream.",
     type: "keynote",
     photo: "/events/nextjsconference.jpeg",
     featured: true,
@@ -42,7 +42,7 @@ const events: Event[] = [
     location: "Online (Vercel Community)",
     audience: "Global Developer Community",
     description:
-      "Invited by Vercel staff to share how v0 revolutionised the prototyping process at whatAIdea — making it an integral part of the development workflow. Hosted on Vercel's official community platform alongside Vercel's Amy Egan.",
+      "Invited by Vercel staff to share how v0 revolutionised the prototyping process at whatAIdea, making it an integral part of the development workflow. Hosted on Vercel's official community platform alongside Vercel's Amy Egan.",
     type: "featured",
     photo: "/events/vercelv0event.png",
     link: "https://vercel.com",
@@ -56,31 +56,31 @@ const events: Event[] = [
     location: "Gibraltar",
     audience: "25 hand-picked global leaders",
     description:
-      "Invited to join an exclusive group of 25 leaders and experts in emerging tech and defence from the US, UK, Europe, Asia and Space. The RAION SAIF unites global AI, business and government leaders to advance society through the 4th industrial revolution — sponsored by raion.io.",
+      "Invited to join an exclusive group of 25 leaders and experts in emerging tech and defence from the US, UK, Europe, Asia and Space. The RAION SAIF unites global AI, business and government leaders to advance society through the 4th industrial revolution. Sponsored by raion.io.",
     type: "invited",
     tags: ["Defence", "Sovereign AI", "Gibraltar", "Government"],
     featured: true,
   },
   {
     id: "lightning-ai",
-    title: "Lightning AI — Replit · Windsurf · Cursor",
+    title: "Lightning AI: Replit, Windsurf, Cursor",
     date: "2025",
     location: "London, UK",
     audience: "AI Developer Community",
     description:
-      "Speaking at a Lightning AI community event showcasing the vibe-coding toolchain — covering Replit, Windsurf, and Cursor and how to build production-grade products with AI-first development workflows.",
+      "Speaking at a Lightning AI community event showcasing the vibe-coding toolchain, covering Replit, Windsurf, and Cursor and how to build production-grade products with AI-first development workflows.",
     type: "community",
     photo: "/events/lightningaielevenlabsclone.jpeg",
     tags: ["Vibe Coding", "Cursor", "Replit", "Windsurf"],
   },
   {
     id: "surrey-devs",
-    title: "SurreyDevs — Build Your Own Chatbot",
+    title: "SurreyDevs: Build Your Own Chatbot",
     date: "January 25, 2024",
     location: "Surrey, UK",
     audience: "Local Developer Community",
     description:
-      "Delivered a presentation on \"How to build your own chatbot for less than a cup of coffee\" — sharing expertise in accessible, affordable AI solutions using Flowise and open-source LLMs.",
+      "Delivered a presentation on \"How to build your own chatbot for less than a cup of coffee\", sharing expertise in accessible, affordable AI solutions using Flowise and open-source LLMs.",
     type: "community",
     photo: "/events/SurreyDevs.jpeg",
     tags: ["Flowise", "LLMs", "Chatbots", "Open Source"],
@@ -92,19 +92,19 @@ const events: Event[] = [
     location: "London, UK",
     audience: "Drupal & Web Developer Community",
     description:
-      "Presented on integrating Flowise with LLM models and datasets — demonstrating how to create intelligent, conversational agents that enhance user engagement and automate site interactions.",
+      "Presented on integrating Flowise with LLM models and datasets, demonstrating how to create intelligent, conversational agents that enhance user engagement and automate site interactions.",
     type: "community",
     photo: "/events/DrupalAIConference.jpeg",
     tags: ["Drupal", "Flowise", "LLMs", "Conversational AI"],
   },
   {
     id: "futures-forum",
-    title: "Futures Forum: AI/LLM Meetup — Launch",
+    title: "Futures Forum: AI/LLM Meetup Launch",
     date: "November 21, 2023",
     location: "London, UK",
     audience: "AI & Tech Community",
     description:
-      "Joined the inaugural Futures Forum exploring how generative AI & LLMs are shaping the world — participating in talks and networking with industry peers at this landmark early community event.",
+      "Joined the inaugural Futures Forum exploring how generative AI and LLMs are shaping the world, participating in talks and networking with industry peers at this landmark early community event.",
     type: "community",
     tags: ["Generative AI", "LLMs", "Community"],
   },
@@ -166,7 +166,7 @@ export default function SpeakingPageClient() {
                 <span className="text-lorenzo-accent">STAGE</span>
               </h1>
               <p className="mt-8 text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed">
-                From sovereign wealth fund AI forums in Gibraltar to Vercel's global community — keynoting, presenting,
+                From sovereign wealth fund AI forums in Gibraltar to Vercel's global community. Keynoting, presenting,
                 and building in public across AI, developer tooling, and vibe coding.
               </p>
             </motion.div>

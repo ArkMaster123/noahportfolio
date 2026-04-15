@@ -21,7 +21,7 @@ const experiences: Experience[] = [
     period: "Jul 2025 – Present",
     location: "Remote",
     description:
-      "Built a £1.5M qualified pipeline and closed £100k+ in revenue from a standing start. Conceptualised and negotiated 'Sentinel' — an AI avatar solution — and pioneered 'Vibe Coding as a Service', training the team to ship AI products through prompt-driven development. Client base spans Market Research firms, US Federal Grant Suppliers, and Defence Contractors (NDAs in place).",
+      "Built a £1.5M qualified pipeline and closed £100k+ in revenue from a standing start. Conceptualised and negotiated 'Sentinel' (an AI avatar solution) and pioneered 'Vibe Coding as a Service', training the team to ship AI products through prompt-driven development. Client base spans Market Research firms, US Federal Grant Suppliers, and Defence Contractors (NDAs in place).",
     highlights: ["£1.5M pipeline", "£100k+ revenue", "Defence & Federal clients", "Vibe Coding as a Service"],
     link: "https://groundctrl.space",
     current: true,
@@ -32,7 +32,7 @@ const experiences: Experience[] = [
     period: "Sept 2024 – Jun 2025",
     location: "London, UK",
     description:
-      "Self-taught development using Claude Code and NextJS to build and ship AI products at pace, scaling to £100k+ revenue within 12 months with 3 contractors across 7+ concurrent projects. Built 'WebMD Clone' — distilling 4 years of clinical knowledge into a custom agentic AI — and flow.legal, a legaltech platform using multi-agent pipelines. Consulting clients included Eli Lilly.",
+      "Self-taught development using Claude Code and NextJS to build and ship AI products at pace, scaling to £100k+ revenue within 12 months with 3 contractors across 7+ concurrent projects. Built 'WebMD Clone' (distilling 4 years of clinical knowledge into a custom agentic AI) and flow.legal, a legaltech platform using multi-agent pipelines. Consulting clients included Eli Lilly.",
     highlights: ["£100k+ revenue", "Eli Lilly", "WebMD Clone", "flow.legal"],
     link: "https://bornandbrand.com",
   },

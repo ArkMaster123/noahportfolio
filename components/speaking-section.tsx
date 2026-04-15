@@ -15,7 +15,7 @@ const speakingEngagements = [
     event: "Cloudflare Hackathon",
     venue: "Virtual",
     audience: "Global Developer Community",
-    topic: "MCP for AI Psychosis — 3rd Place",
+    topic: "MCP for AI Psychosis (3rd Place)",
     type: "Hackathon (3rd Place)",
   },
   {
