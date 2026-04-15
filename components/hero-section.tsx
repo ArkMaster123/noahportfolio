@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef, useState, useEffect } from "react"
+import Image from "next/image"
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import InteractivePortrait from "./interactive-portrait"
 import SignatureMarqueeSection from "./signature-marquee-section"
@@ -42,9 +43,22 @@ export default function HeroSection() {
   // Mobile: static single-screen hero, no scroll animation
   if (isMobile) {
     return (
-      <section className="relative h-screen bg-[#1a1f1a] flex items-center justify-center overflow-hidden">
-        <div className="w-full h-full flex items-center justify-center">
-          {isReady && <InteractivePortrait />}
+      <section className="relative min-h-[100svh] bg-[#1a1f1a] flex items-center justify-center overflow-hidden">
+        <div className="relative z-10 w-full h-full flex items-center justify-center px-6 py-20">
+          <div className="relative w-full max-w-sm aspect-[4/5]">
+            <Image
+              src="/spacesuit/visor-off.png"
+              alt="Noah Santoni"
+              fill
+              sizes="(max-width: 768px) 90vw, 400px"
+              className="object-contain"
+              priority
+            />
+          </div>
+        </div>
+        <div className="absolute bottom-4 left-4 z-20 pointer-events-none bg-black/50 backdrop-blur-sm rounded-lg px-3 py-2">
+          <p className="text-white/60 text-xs font-medium">Head of Growth at GroundCtrl</p>
+          <p className="text-lorenzo-accent text-xs font-bold">Founder at Born & Brand</p>
         </div>
       </section>
     )
